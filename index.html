@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Forms Portal</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f7fbff, #eaf3fb);
+      color: #1a2a3a;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .header p {
+      margin-top: 10px;
+      color: #5c6f82;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: #e3f0ff;
+      color: #2a5aa0;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .card-left {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .step {
+      font-size: 14px;
+      color: #7a8a9a;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #6b7c8f;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      background: #0a3d62;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: 0.3s;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #062c46;
+    }
+
+    .info-box {
+      background: #ffffff;
+      border-left: 4px solid #0a3d62;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #5c6f82;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #8a9aaa;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Patient Intake & Consent Forms</h1>
+      <p>Please complete your forms before your appointment for a smooth and safe experience.</p>
+      <div class="badge">🔒 Secure & Confidential</div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="card">
+      <div class="card-left">
+        <div class="step">Step 1</div>
+        <div class="title">New Patient Intake Form</div>
+        <div class="desc">
+          Includes personal details, medical history, and treatment preferences.
+        </div>
+      </div>
+      <a class="btn" href="https://form.jotform.com/260607998364067" target="_blank">
+        Start Intake Form
+      </a>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="card">
+      <div class="card-left">
+        <div class="step">Step 2</div>
+        <div class="title">PDO Thread Consent Form</div>
+        <div class="desc">
+          Required consent for PDO thread procedures including risks and approvals.
+        </div>
+      </div>
+      <a class="btn" href="https://form.jotform.com/Abhishek_Anand/pdo-thread-consent-form" target="_blank">
+        Fill Consent Form
+      </a>
+    </div>
+
+    <!-- Info Box -->
+    <div class="info-box">
+      Please ensure all required forms are completed prior to your appointment.<br/><br/>
+      All information provided is kept strictly confidential and secure.<br/><br/>
+      If you have any questions or need assistance, please contact our office.
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      © 2026 Your MedSpa Clinic • All Rights Reserved
+    </div>
+
+  </div>
+
+</body>
+</html>
